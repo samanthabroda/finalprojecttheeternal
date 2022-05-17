@@ -85,6 +85,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ChooseLogin.aspx" />
     <Content Include="DeleteUser.aspx" />
     <Content Include="Style.css" />
     <Content Include="UserEntry.aspx" />
@@ -92,6 +93,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChooseLogin.aspx.cs">
+      <DependentUpon>ChooseLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChooseLogin.aspx.designer.cs">
+      <DependentUpon>ChooseLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DeleteUser.aspx.cs">
       <DependentUpon>DeleteUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

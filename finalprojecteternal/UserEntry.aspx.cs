@@ -38,6 +38,20 @@ namespace finalprojecteternal
                         c.Open();
                         SqlCommand cmd = new SqlCommand("insert into ADMINISTRATOR (FirstName, LastName, Branch, Email, PhoneNumber, HomeAddress, Status, Pronouns, AboutMe, Experience) values('" + txtFirstName.Text + "','" + txtLastName.Text + "','" + txtBranch.Text + "','" + txtEmail.Text + "','" + txtPhoneNumber.Text + "','" + txtHomeAddress.Text + "','" + txtStatus.Text + "','','','')", c);
                         cmd.ExecuteNonQuery();
+                        SqlCommand goa = new SqlCommand("SELECT AdminID FROM ADMINISTRATOR WHERE FirstName='" + txtFirstName.Text + "'", c);
+                        string id = "0";
+                        int i = Int32.Parse(id);
+                        SqlDataReader goareader = goa.ExecuteReader();
+                        if (goareader.Read())
+                        {
+                            i = goareader.GetInt32(0);
+                        }
+
+
+                        goareader.Close();
+                        SqlCommand cmde = new SqlCommand("INSERT INTO ADMINACCOUNTINFO VALUES (" + i + ", '" + txtEmail.Text + "', 'abc123')", c);
+                        cmde.ExecuteNonQuery();
+
                         lblMessage.Text = "Record submitted successfully!";
                         c.Close();
                     }
@@ -56,6 +70,19 @@ namespace finalprojecteternal
                         c.Open();
                         SqlCommand cmd = new SqlCommand("insert into STUDENT (RAMID, FirstName, LastName, Major, Standing, CurrentGPA, Email, PhoneNumber, HomeAddress, Status, Pronouns, AboutMe, Goals) values('" + txtRamID.Text + "','" + txtFirstName.Text + "','" + txtLastName.Text + "','" + txtMajor.Text + "','" + txtStanding.Text + "','" + txtCurrentGPA.Text + "','" + txtEmail.Text + "','" + txtPhoneNumber.Text + "','" + txtHomeAddress.Text + "','" + txtStatus.Text + "', '', '', '')", c);
                         cmd.ExecuteNonQuery();
+                        SqlCommand goa = new SqlCommand("SELECT StudentID FROM STUDENT WHERE FirstName='" + txtFirstName.Text+"'", c);
+                        string id = "0";
+                        int i = Int32.Parse(id);
+                        SqlDataReader goareader = goa.ExecuteReader();
+                        if (goareader.Read())
+                        {
+                            i = goareader.GetInt32(0);
+                        }
+                        
+
+                        goareader.Close();
+                        SqlCommand cmde = new SqlCommand("INSERT INTO STUDENTACCOUNTINFO VALUES (" + i + ", '" + txtEmail.Text + "', 'abc123')", c);
+                        cmde.ExecuteNonQuery();
                         lblMessage.Text = "Record submitted successfully!";
                         c.Close();
                     }
@@ -75,6 +102,20 @@ namespace finalprojecteternal
                         c.Open();
                         SqlCommand cmd = new SqlCommand("insert into COUNSELOR (FirstName, LastName, Education, Availability, Email, PhoneNumber, HomeAddress, Department, Status, Pronouns, AboutMe, Experience) VALUES ('" + txtFirstName.Text + "','" + txtLastName.Text + "','" + txtEducation.Text + "','" + txtAvailability.Text + "','" + txtEmail.Text + "','" + txtPhoneNumber.Text + "','" + txtHomeAddress.Text + "','" + txtDepartment.Text + "','" + txtStatus.Text + "','','','')", c);
                         cmd.ExecuteNonQuery();
+                        SqlCommand goa = new SqlCommand("SELECT CounselorID FROM COUNSELOR WHERE FirstName='" + txtFirstName.Text + "'", c);
+                        string id = "0";
+                        int i = Int32.Parse(id);
+                        SqlDataReader goareader = goa.ExecuteReader();
+                        if (goareader.Read())
+                        {
+                            i = goareader.GetInt32(0);
+                        }
+
+
+                        goareader.Close();
+                        SqlCommand cmde = new SqlCommand("INSERT INTO COUNSELORACCOUNTINFO VALUES (" + i + ", '" + txtEmail.Text + "', 'abc123')", c);
+                        cmde.ExecuteNonQuery();
+
                         lblMessage.Text = "Record submitted successfully!";
                         c.Close();
                     }
@@ -93,6 +134,20 @@ namespace finalprojecteternal
                         c.Open();
                         SqlCommand cmd = new SqlCommand("insert into TLC (RAMID, FirstName, LastName, Position, Major, Standing, CurrentGPA, Email, PhoneNumber, HomeAddress, Status, Pronouns, AboutMe, Goals) values('" + txtRamID.Text + "','" + txtFirstName.Text + "','" + txtLastName.Text + "','" + txtPosition.Text + "','" + txtMajor.Text + "','" + txtStanding.Text + "','" + txtCurrentGPA.Text + "','" + txtEmail.Text + "','" + txtPhoneNumber.Text + "','" + txtHomeAddress.Text + "','" + txtStatus.Text + "','','','')", c);
                         cmd.ExecuteNonQuery();
+                        SqlCommand goa = new SqlCommand("SELECT TLCID FROM TLC WHERE FirstName='" + txtFirstName.Text + "'", c);
+                        string id = "0";
+                        int i = Int32.Parse(id);
+                        SqlDataReader goareader = goa.ExecuteReader();
+                        if (goareader.Read())
+                        {
+                            i = goareader.GetInt32(0);
+                        }
+
+
+                        goareader.Close();
+                        SqlCommand cmde = new SqlCommand("INSERT INTO TLCACCOUNTINFO VALUES (" + i + ", '" + txtEmail.Text + "', 'abc123')", c);
+                        cmde.ExecuteNonQuery();
+
                         lblMessage.Text = "Record submitted successfully!";
                         c.Close();
                     }
