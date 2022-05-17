@@ -57,3 +57,14 @@ C:\Users\ahmar\source\repos\TrioFinalProject\finalprojecttheeternal\finalproject
 C:\Users\ahmar\source\repos\TrioFinalProject\finalprojecttheeternal\finalprojecteternal\obj\Debug\finalprojecteternal.csproj.CopyComplete
 C:\Users\ahmar\source\repos\TrioFinalProject\finalprojecttheeternal\finalprojecteternal\obj\Debug\finalprojecteternal.dll
 C:\Users\ahmar\source\repos\TrioFinalProject\finalprojecttheeternal\finalprojecteternal\obj\Debug\finalprojecteternal.pdb
+C:\Users\ahmar\source\repos\TrioFinalProject\finalprojecttheeternal\finalprojecteternal\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ahmar\source\repos\TrioFinalProject\finalprojecttheeternal\finalprojecteternal\bin\System.Web.Helpers.dll
+C:\Users\ahmar\source\repos\TrioFinalProject\finalprojecttheeternal\finalprojecteternal\bin\System.Web.Razor.dll
+C:\Users\ahmar\source\repos\TrioFinalProject\finalprojecttheeternal\finalprojecteternal\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ahmar\source\repos\TrioFinalProject\finalprojecttheeternal\finalprojecteternal\bin\System.Web.WebPages.dll
+C:\Users\ahmar\source\repos\TrioFinalProject\finalprojecttheeternal\finalprojecteternal\bin\System.Web.WebPages.Razor.dll
+C:\Users\ahmar\source\repos\TrioFinalProject\finalprojecttheeternal\finalprojecteternal\bin\System.Web.Helpers.xml
+C:\Users\ahmar\source\repos\TrioFinalProject\finalprojecttheeternal\finalprojecteternal\bin\System.Web.Razor.xml
+C:\Users\ahmar\source\repos\TrioFinalProject\finalprojecttheeternal\finalprojecteternal\bin\System.Web.WebPages.xml
+C:\Users\ahmar\source\repos\TrioFinalProject\finalprojecttheeternal\finalprojecteternal\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ahmar\source\repos\TrioFinalProject\finalprojecttheeternal\finalprojecteternal\bin\System.Web.WebPages.Razor.xml
