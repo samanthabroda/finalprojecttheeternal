@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h1>Events (<a class="aandcOnly" href="EventsEdit.aspx">Edit</a>)</h1>
     <asp:datalist runat="server" DataKeyField="EventID" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="Unnamed1_SelectedIndexChanged">
         <ItemTemplate>
             <h3><asp:Label ID="EventNameLabel" runat="server" Text='<%# Eval("EventName") %>' /></h3>
@@ -26,6 +27,6 @@
     </asp:datalist>
 
 
-    <asp:sqldatasource id="SqlDataSource1" runat="server" connectionstring="<%$ ConnectionStrings:masterConnectionString %>" selectcommand="SELECT [EventID], [EventName], [EventImage], [EventLocation], [EventDescription], [EventLink], [EventDateTime], [RSVPCount], [EventApproval] FROM [EVENTS1] WHERE [EventApproval]="true" ORDER BY [EventDateTime]"></asp:sqldatasource>
+    <asp:sqldatasource id="SqlDataSource1" runat="server" connectionstring="<%$ ConnectionStrings:masterConnectionString %>" selectcommand="SELECT [EventID], [EventName], [EventImage], [EventLocation], [EventDescription], [EventLink], [EventDateTime], [RSVPCount], [EventApproval] FROM [EVENTS1] ORDER BY [EventDateTime]"></asp:sqldatasource>
 </asp:Content>
 
