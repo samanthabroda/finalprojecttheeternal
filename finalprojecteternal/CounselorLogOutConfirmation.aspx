@@ -1,14 +1,16 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="finalprojecteternal.MasterPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CounselorLogOutConfirmation.aspx.cs" Inherits="finalprojecteternal.CounselorLogOutConfirmation" %>
 
 <!DOCTYPE html>
 
-
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <script type = "text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+    </script>
     <link rel="stylesheet" href="Style.css">
-
+    <title></title>
 </head>
 
 <header>
@@ -27,8 +29,6 @@
     </button>
     <div class="dropdown-content">
         <a href="ViewStudents.aspx">View All Students</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="UserEntry.aspx">Add Users</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <a href="DeleteUser.aspx">Delete Users</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </div>
   </div>
 
@@ -37,16 +37,18 @@
 </header>
 
 <body>
+    <p>
+        <br />
+    </p>
+    <p>
+        Are you sure you want to log out?</p>
     <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-
-
-
-            </asp:ContentPlaceHolder>
-        </div>
         <p>
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Log Out" />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Yes, log me out" />
         </p>
+        <div>
+        </div>
     </form>
 </body>
+</html>
+

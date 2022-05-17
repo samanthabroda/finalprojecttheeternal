@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="finalprojecteternal.MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TLCMaster.master.cs" Inherits="finalprojecteternal.TLCMaster" %>
 
 <!DOCTYPE html>
 
@@ -13,24 +13,13 @@
 
 <header>
   <nav am-layout="horizontal">
-  <a href="HomePage.aspx">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="FAQPage.aspx">FAQ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="StudentHomePage.aspx">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="StudentFAQPage.aspx">FAQ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
      <a href="#">My Profile</a>&nbsp;&nbsp;
       
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-      <div class="dropdown">
-    <button class="dropbtn">Manage Users
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-        <a href="ViewStudents.aspx">View All Students</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="UserEntry.aspx">Add Users</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <a href="DeleteUser.aspx">Delete Users</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </div>
-  </div>
 
 
   </nav>
@@ -50,3 +39,4 @@
         </p>
     </form>
 </body>
+

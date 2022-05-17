@@ -71,6 +71,7 @@
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -85,20 +86,78 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ChooseLogin.aspx" />
+    <Content Include="AdminEditProfile.aspx" />
+    <Content Include="AdminProfile.aspx" />
+    <Content Include="CounselorFAQPage.aspx" />
+    <Content Include="CounselorHomePage.aspx" />
+    <Content Include="CounselorLogOutConfirmation.aspx" />
+    <Content Include="CounselorViewStudents.aspx" />
     <Content Include="DeleteUser.aspx" />
+    <Content Include="FAQEdit.aspx" />
+    <Content Include="FAQPage.aspx" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="LogOutConfirmation.aspx" />
+    <Content Include="StudentFAQPage.aspx" />
+    <Content Include="StudentHomePage.aspx" />
+    <Content Include="StudentLogin.aspx" />
+    <Content Include="StudentLogOutConfirmation.aspx" />
     <Content Include="Style.css" />
+    <Content Include="TLCFAQPage.aspx" />
+    <Content Include="TLCHomePage.aspx" />
+    <Content Include="TLCLogOutConfirmation.aspx" />
     <Content Include="UserEntry.aspx" />
     <Content Include="ViewStudents.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChooseLogin.aspx.cs">
-      <DependentUpon>ChooseLogin.aspx</DependentUpon>
+    <Compile Include="AdminEditProfile.aspx.cs">
+      <DependentUpon>AdminEditProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ChooseLogin.aspx.designer.cs">
-      <DependentUpon>ChooseLogin.aspx</DependentUpon>
+    <Compile Include="AdminEditProfile.aspx.designer.cs">
+      <DependentUpon>AdminEditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProfile.aspx.cs">
+      <DependentUpon>AdminProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminProfile.aspx.designer.cs">
+      <DependentUpon>AdminProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CounselorFAQPage.aspx.cs">
+      <DependentUpon>CounselorFAQPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CounselorFAQPage.aspx.designer.cs">
+      <DependentUpon>CounselorFAQPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CounselorHomePage.aspx.cs">
+      <DependentUpon>CounselorHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CounselorHomePage.aspx.designer.cs">
+      <DependentUpon>CounselorHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CounselorLogOutConfirmation.aspx.cs">
+      <DependentUpon>CounselorLogOutConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CounselorLogOutConfirmation.aspx.designer.cs">
+      <DependentUpon>CounselorLogOutConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CounselorMaster.Master.cs">
+      <DependentUpon>CounselorMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CounselorMaster.Master.designer.cs">
+      <DependentUpon>CounselorMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CounselorViewStudents.aspx.cs">
+      <DependentUpon>CounselorViewStudents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CounselorViewStudents.aspx.designer.cs">
+      <DependentUpon>CounselorViewStudents.aspx</DependentUpon>
     </Compile>
     <Compile Include="DeleteUser.aspx.cs">
       <DependentUpon>DeleteUser.aspx</DependentUpon>
@@ -106,6 +165,34 @@
     </Compile>
     <Compile Include="DeleteUser.aspx.designer.cs">
       <DependentUpon>DeleteUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQEdit.aspx.cs">
+      <DependentUpon>FAQEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQEdit.aspx.designer.cs">
+      <DependentUpon>FAQEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQPage.aspx.cs">
+      <DependentUpon>FAQPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQPage.aspx.designer.cs">
+      <DependentUpon>FAQPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOutConfirmation.aspx.cs">
+      <DependentUpon>LogOutConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOutConfirmation.aspx.designer.cs">
+      <DependentUpon>LogOutConfirmation.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
@@ -115,6 +202,69 @@
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentFAQPage.aspx.cs">
+      <DependentUpon>StudentFAQPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentFAQPage.aspx.designer.cs">
+      <DependentUpon>StudentFAQPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentHomePage.aspx.cs">
+      <DependentUpon>StudentHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentHomePage.aspx.designer.cs">
+      <DependentUpon>StudentHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentLogin.aspx.cs">
+      <DependentUpon>StudentLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentLogin.aspx.designer.cs">
+      <DependentUpon>StudentLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentLogOutConfirmation.aspx.cs">
+      <DependentUpon>StudentLogOutConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentLogOutConfirmation.aspx.designer.cs">
+      <DependentUpon>StudentLogOutConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMaster.Master.cs">
+      <DependentUpon>StudentMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentMaster.Master.designer.cs">
+      <DependentUpon>StudentMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TLCFAQPage.aspx.cs">
+      <DependentUpon>TLCFAQPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLCFAQPage.aspx.designer.cs">
+      <DependentUpon>TLCFAQPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLCHomePage.aspx.cs">
+      <DependentUpon>TLCHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLCHomePage.aspx.designer.cs">
+      <DependentUpon>TLCHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLCLogOutConfirmation.aspx.cs">
+      <DependentUpon>TLCLogOutConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLCLogOutConfirmation.aspx.designer.cs">
+      <DependentUpon>TLCLogOutConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLCMaster.Master.cs">
+      <DependentUpon>TLCMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLCMaster.Master.designer.cs">
+      <DependentUpon>TLCMaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="UserEntry.aspx.cs">
       <DependentUpon>UserEntry.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -132,7 +282,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage.Master" />
+    <Content Include="CounselorMaster.Master" />
     <None Include="packages.config" />
+    <Content Include="StudentMaster.Master" />
+    <Content Include="TLCMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

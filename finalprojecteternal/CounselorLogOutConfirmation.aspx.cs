@@ -7,16 +7,17 @@ using System.Web.UI.WebControls;
 
 namespace finalprojecteternal
 {
-    public partial class ChooseLogin : System.Web.UI.Page
+    public partial class CounselorLogOutConfirmation : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void LinkButton1_Click(object sender, EventArgs e)
+        protected void Button2_Click(object sender, EventArgs e)
         {
-
+            Session.Abandon();
+            Response.Redirect("StudentLogin.aspx");
         }
     }
 }

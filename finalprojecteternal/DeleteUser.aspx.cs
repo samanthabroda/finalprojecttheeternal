@@ -23,7 +23,9 @@ namespace finalprojecteternal
                 {
                     c.Open();
                     SqlCommand cmd = new SqlCommand("DELETE FROM ADMINISTRATOR WHERE AdminID ="+txtID.Text, c);
+                    SqlCommand cmde = new SqlCommand("DELETE FROM ADMINACCOUNTINFO WHERE AdminID =" + txtID.Text, c);
                     cmd.ExecuteNonQuery();
+                    cmde.ExecuteNonQuery();
                     c.Close();
 
                 }
@@ -32,7 +34,9 @@ namespace finalprojecteternal
                 {
                     c.Open();
                     SqlCommand cmd = new SqlCommand("DELETE FROM STUDENT WHERE StudentID =" + txtID.Text, c);
+                    SqlCommand cmde = new SqlCommand("DELETE FROM STUDENTACCOUNTINFO WHERE StudentID =" + txtID.Text, c);
                     cmd.ExecuteNonQuery();
+                    cmde.ExecuteNonQuery();
                     c.Close();
                 }
 
@@ -40,7 +44,9 @@ namespace finalprojecteternal
                 {
                     c.Open();
                     SqlCommand cmd = new SqlCommand("DELETE FROM COUNSELOR WHERE CounselorID =" + txtID.Text, c);
+                    SqlCommand cmde = new SqlCommand("DELETE FROM COUNSELORACCOUNTINFO WHERE CounselorID =" + txtID.Text, c);
                     cmd.ExecuteNonQuery();
+                    cmde.ExecuteNonQuery();
                     c.Close();
 
                 }
@@ -49,7 +55,9 @@ namespace finalprojecteternal
                 {
                     c.Open();
                     SqlCommand cmd = new SqlCommand("DELETE FROM TLC WHERE TLCID =" + txtID.Text, c);
+                    SqlCommand cmde = new SqlCommand("DELETE FROM TLCACCOUNTINFO WHERE TLCID =" + txtID.Text, c);
                     cmd.ExecuteNonQuery();
+                    cmde.ExecuteNonQuery();
                     c.Close();
 
 
