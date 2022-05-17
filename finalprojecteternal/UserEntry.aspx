@@ -7,23 +7,27 @@ h1 {
     text-align: center;
 }
 
-</style>
+        .auto-style1 {
+            margin-left: 360px;
+        }
+
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
     <br />
 </p>
 <h1>Add User</h1>
-<div class="allForms">
+<div class="auto-style1">
     <asp:Label ID="lblFill" runat="server"></asp:Label>
     <label id="formLabel0" for="FirstName">
-    <br />
+    <br class="auto-style1" />
     <asp:Label ID="lblMessage" runat="server"></asp:Label>
-    <br />
-    <br />
-    <br />
+    <br class="auto-style1" />
+    <br class="auto-style1" />
+    <br class="auto-style1" />
     Type Of User*:<br />
-    <asp:RadioButtonList ID="txtUser" runat="server">
+    <asp:RadioButtonList ID="txtUser" runat="server" Width="209px">
         <asp:ListItem>Student</asp:ListItem>
         <asp:ListItem>TLC Member</asp:ListItem>
         <asp:ListItem>Counselor</asp:ListItem>

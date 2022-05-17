@@ -85,11 +85,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DeleteUser.aspx" />
     <Content Include="Style.css" />
     <Content Include="UserEntry.aspx" />
+    <Content Include="ViewStudents.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeleteUser.aspx.cs">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteUser.aspx.designer.cs">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -104,6 +113,13 @@
     </Compile>
     <Compile Include="UserEntry.aspx.designer.cs">
       <DependentUpon>UserEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStudents.aspx.cs">
+      <DependentUpon>ViewStudents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewStudents.aspx.designer.cs">
+      <DependentUpon>ViewStudents.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
