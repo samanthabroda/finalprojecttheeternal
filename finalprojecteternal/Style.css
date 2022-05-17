@@ -423,6 +423,7 @@ optgroup {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+    margin-right: 381px;
 }
 
 td,
@@ -1683,4 +1684,5 @@ body > div[am-wrapper] {
     position: relative;
     font-size: 14px;
     font-weight: 400;
-    text-align: cent
+    text-align: center;
+}
