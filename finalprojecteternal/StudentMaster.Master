@@ -15,6 +15,7 @@
   <nav am-layout="horizontal">
   <a href="StudentHomePage.aspx">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="StudentFAQPage.aspx">FAQ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="StudentEvents.aspx">Events</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
      <a href="#">My Profile</a>&nbsp;&nbsp;
       
 

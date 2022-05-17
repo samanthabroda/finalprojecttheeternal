@@ -88,23 +88,36 @@
   <ItemGroup>
     <Content Include="AdminEditProfile.aspx" />
     <Content Include="AdminProfile.aspx" />
+    <Content Include="CounselorEditProfile.aspx" />
+    <Content Include="CounselorEvents.aspx" />
+    <Content Include="CounselorEventsEdit.aspx" />
     <Content Include="CounselorFAQPage.aspx" />
     <Content Include="CounselorHomePage.aspx" />
     <Content Include="CounselorLogOutConfirmation.aspx" />
+    <Content Include="CounselorProfile.aspx" />
     <Content Include="CounselorViewStudents.aspx" />
     <Content Include="DeleteUser.aspx" />
+    <Content Include="Events.aspx" />
+    <Content Include="EventsEdit.aspx" />
     <Content Include="FAQEdit.aspx" />
     <Content Include="FAQPage.aspx" />
     <Content Include="HomePage.aspx" />
     <Content Include="LogOutConfirmation.aspx" />
+    <Content Include="StudentEditProfile.aspx" />
+    <Content Include="StudentEvents.aspx" />
     <Content Include="StudentFAQPage.aspx" />
     <Content Include="StudentHomePage.aspx" />
     <Content Include="StudentLogin.aspx" />
     <Content Include="StudentLogOutConfirmation.aspx" />
+    <Content Include="StudentProfile.aspx" />
     <Content Include="Style.css" />
+    <Content Include="TLCEditProfile.aspx" />
+    <Content Include="TLCEvents.aspx" />
+    <Content Include="TLCEventsEdit.aspx" />
     <Content Include="TLCFAQPage.aspx" />
     <Content Include="TLCHomePage.aspx" />
     <Content Include="TLCLogOutConfirmation.aspx" />
+    <Content Include="TLCProfile.aspx" />
     <Content Include="UserEntry.aspx" />
     <Content Include="ViewStudents.aspx" />
     <Content Include="Web.config" />
@@ -123,6 +136,27 @@
     </Compile>
     <Compile Include="AdminProfile.aspx.designer.cs">
       <DependentUpon>AdminProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CounselorEditProfile.aspx.cs">
+      <DependentUpon>CounselorEditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CounselorEditProfile.aspx.designer.cs">
+      <DependentUpon>CounselorEditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CounselorEvents.aspx.cs">
+      <DependentUpon>CounselorEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CounselorEvents.aspx.designer.cs">
+      <DependentUpon>CounselorEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CounselorEventsEdit.aspx.cs">
+      <DependentUpon>CounselorEventsEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CounselorEventsEdit.aspx.designer.cs">
+      <DependentUpon>CounselorEventsEdit.aspx</DependentUpon>
     </Compile>
     <Compile Include="CounselorFAQPage.aspx.cs">
       <DependentUpon>CounselorFAQPage.aspx</DependentUpon>
@@ -152,6 +186,13 @@
     <Compile Include="CounselorMaster.Master.designer.cs">
       <DependentUpon>CounselorMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="CounselorProfile.aspx.cs">
+      <DependentUpon>CounselorProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CounselorProfile.aspx.designer.cs">
+      <DependentUpon>CounselorProfile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CounselorViewStudents.aspx.cs">
       <DependentUpon>CounselorViewStudents.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -165,6 +206,20 @@
     </Compile>
     <Compile Include="DeleteUser.aspx.designer.cs">
       <DependentUpon>DeleteUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events.aspx.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Events.aspx.designer.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventsEdit.aspx.cs">
+      <DependentUpon>EventsEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventsEdit.aspx.designer.cs">
+      <DependentUpon>EventsEdit.aspx</DependentUpon>
     </Compile>
     <Compile Include="FAQEdit.aspx.cs">
       <DependentUpon>FAQEdit.aspx</DependentUpon>
@@ -202,6 +257,20 @@
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentEditProfile.aspx.cs">
+      <DependentUpon>StudentEditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentEditProfile.aspx.designer.cs">
+      <DependentUpon>StudentEditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentEvents.aspx.cs">
+      <DependentUpon>StudentEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentEvents.aspx.designer.cs">
+      <DependentUpon>StudentEvents.aspx</DependentUpon>
+    </Compile>
     <Compile Include="StudentFAQPage.aspx.cs">
       <DependentUpon>StudentFAQPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -237,6 +306,34 @@
     <Compile Include="StudentMaster.Master.designer.cs">
       <DependentUpon>StudentMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="StudentProfile.aspx.cs">
+      <DependentUpon>StudentProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentProfile.aspx.designer.cs">
+      <DependentUpon>StudentProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLCEditProfile.aspx.cs">
+      <DependentUpon>TLCEditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLCEditProfile.aspx.designer.cs">
+      <DependentUpon>TLCEditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLCEvents.aspx.cs">
+      <DependentUpon>TLCEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLCEvents.aspx.designer.cs">
+      <DependentUpon>TLCEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLCEventsEdit.aspx.cs">
+      <DependentUpon>TLCEventsEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLCEventsEdit.aspx.designer.cs">
+      <DependentUpon>TLCEventsEdit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TLCFAQPage.aspx.cs">
       <DependentUpon>TLCFAQPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -264,6 +361,13 @@
     </Compile>
     <Compile Include="TLCMaster.Master.designer.cs">
       <DependentUpon>TLCMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TLCProfile.aspx.cs">
+      <DependentUpon>TLCProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLCProfile.aspx.designer.cs">
+      <DependentUpon>TLCProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserEntry.aspx.cs">
       <DependentUpon>UserEntry.aspx</DependentUpon>
