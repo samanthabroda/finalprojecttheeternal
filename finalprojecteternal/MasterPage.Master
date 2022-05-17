@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="finalprojecteternal.MasterPage" %>
+
+<!DOCTYPE html>
+
+
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<header>
+  <nav am-layout="horizontal">
+  <a href="HomePage.aspx">Home</a>
+  <a href="FAQPage.aspx">FAQ</a>
+  <a href="ViewStudents.aspx">View all students</a>
+  <a href="ViewStudents.aspx">Add Students</a>
+
+  <a href="#">My Profile</a>
+  </nav>
+</header>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
