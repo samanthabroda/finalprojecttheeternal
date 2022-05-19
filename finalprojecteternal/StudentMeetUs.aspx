@@ -23,7 +23,7 @@
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:masterConnectionString %>" SelectCommand="SELECT [FirstName], [Availability], [AboutMe] FROM [COUNSELOR]"></asp:SqlDataSource>
     </p>
     <p>
-        <asp:HyperLink ID="HyperLink1" runat="server">Book Appointment</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/BookAppointment.aspx">Book Appointment</asp:HyperLink>
     </p>
     <p>
         &nbsp;</p>
