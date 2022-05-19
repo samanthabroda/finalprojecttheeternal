@@ -23,21 +23,30 @@
     Event Title:
     <asp:TextBox ID="TextBox1" runat="server" Width="327px"></asp:TextBox>
     <br />
+    <br />
     Event Image:
     <asp:FileUpload ID="FileUpload1" runat="server" />
+    <asp:Label ID="ImgWarning" runat="server"></asp:Label>
+    <br />
     <br />
     Event Date and Time: 
     <asp:TextBox ID="TextBox3" runat="server" Width="327px" TextMode="DateTimeLocal"></asp:TextBox>
     <br />
+    <br />
     Event Location: 
     <asp:TextBox ID="TextBox2" runat="server" Width="338px"></asp:TextBox>
+    <br />
     <br />
     Event Link: 
     <asp:TextBox ID="TextBox4" runat="server" Width="316px"></asp:TextBox>
     <br />
+    <br />
     Event Description:
-    <asp:TextBox ID="TextBox5" runat="server" Width="1000px"></asp:TextBox>
+    <asp:TextBox ID="TextBox5" runat="server" Width="571px" Height="21px"></asp:TextBox>
     <br/>
+    <br />
+    <asp:Label runat="server" id="hideMe">How many attendees are allowed? <asp:TextBox ID="TextBox6" runat="server" Width="106px"></asp:TextBox></asp:Label>
+    <br />
     <asp:Button ID="Button1" runat="server" Text="Submit" Height="46px" OnClick="Button1_Click" Width="177px" />
     <br />
     <br />
