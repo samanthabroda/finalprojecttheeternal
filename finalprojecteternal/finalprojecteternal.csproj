@@ -88,6 +88,7 @@
   <ItemGroup>
     <Content Include="AdminEditProfile.aspx" />
     <Content Include="AdminProfile.aspx" />
+    <Content Include="BookAppointment.aspx" />
     <Content Include="CounselorEditProfile.aspx" />
     <Content Include="CounselorEvents.aspx" />
     <Content Include="CounselorEventsEdit.aspx" />
@@ -111,6 +112,7 @@
     <Content Include="StudentHomePage.aspx" />
     <Content Include="StudentLogin.aspx" />
     <Content Include="StudentLogOutConfirmation.aspx" />
+    <Content Include="StudentMeetUs.aspx" />
     <Content Include="StudentProfile.aspx" />
     <Content Include="Style.css" />
     <Content Include="TLCEditProfile.aspx" />
@@ -138,6 +140,13 @@
     </Compile>
     <Compile Include="AdminProfile.aspx.designer.cs">
       <DependentUpon>AdminProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookAppointment.aspx.cs">
+      <DependentUpon>BookAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookAppointment.aspx.designer.cs">
+      <DependentUpon>BookAppointment.aspx</DependentUpon>
     </Compile>
     <Compile Include="CounselorEditProfile.aspx.cs">
       <DependentUpon>CounselorEditProfile.aspx</DependentUpon>
@@ -322,6 +331,13 @@
     </Compile>
     <Compile Include="StudentMaster.Master.designer.cs">
       <DependentUpon>StudentMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMeetUs.aspx.cs">
+      <DependentUpon>StudentMeetUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentMeetUs.aspx.designer.cs">
+      <DependentUpon>StudentMeetUs.aspx</DependentUpon>
     </Compile>
     <Compile Include="StudentProfile.aspx.cs">
       <DependentUpon>StudentProfile.aspx</DependentUpon>

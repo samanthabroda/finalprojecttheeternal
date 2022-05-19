@@ -1,0 +1,38 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+
+namespace finalprojecteternal
+{
+    
+    
+    public partial class BookAppointment : System.Web.UI.Page
+    {
+        SqlConnection c = new SqlConnection(@"Data Source=DESKTOP-DOT3O9P,1434; Initial Catalog=master; User Id=maliksimrah; Password=@Farmingdale123");
+
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            lblDisplay.Visible = false;
+            lblWhatDate.Visible = false;
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblDisplay.Visible = true;
+            
+            c.Open();
+            SqlCommand disp = new SqlCommand("SELECT Availability FROM COUNSELOR WHERE FirstName = '" + lblWhichCounselor.Text + "'", c);
+            SqlDataReader dispreader = disp.ExecuteReader();
+            if (dispreader.Read())
+            {
+                lblAvailability.Text = dispreader.GetString(0);
+            }
+            c.Close();
+        }
+    }
+}

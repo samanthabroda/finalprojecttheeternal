@@ -7,14 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace finalprojecteternal
 {
-    public partial class SamanthaBrodaAppointments : System.Web.UI.Page
+    public partial class StudentMeetUs : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        protected void DetailsView1_PageIndexChanging(object sender, DetailsViewPageEventArgs e)
         {
 
         }
