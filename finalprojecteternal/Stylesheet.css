@@ -1,0 +1,18 @@
+﻿body {
+}
+
+#form1{
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: lightgreen;
+}
+
+
+#Content2 {
+    font-size: 20px;
+}
+
+Columns {
+    column-width: auto;
+}

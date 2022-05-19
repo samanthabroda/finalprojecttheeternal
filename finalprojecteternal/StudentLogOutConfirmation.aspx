@@ -17,21 +17,14 @@
   <nav am-layout="horizontal">
   <a href="HomePage.aspx">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="FAQPage.aspx">FAQ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <a href="#">My Profile</a>&nbsp;&nbsp;
+      <a href="StudentMeetUs.aspx">Meet Us</a>&nbsp;&nbsp;
+     <a href="StudentProfile.aspx">My Profile</a>&nbsp;&nbsp;
       
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-      <div class="dropdown">
-    <button class="dropbtn">Manage Users
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-        <a href="ViewStudents.aspx">View All Students</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="UserEntry.aspx">Add Users</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <a href="DeleteUser.aspx">Delete Users</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </div>
+
   </div>
 
 

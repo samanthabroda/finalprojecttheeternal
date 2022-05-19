@@ -7,9 +7,7 @@ h1 {
     text-align: center;
 }
 
-        .auto-style1 {
-            margin-left: 360px;
-        }
+
 
     </style>
 </asp:Content>
@@ -36,10 +34,10 @@ h1 {
     <br />
     <br />
     <br />
-    First Name*:</label>
+    <label style="width: 25%;">First Name*:</label> 
     <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
     <br />
-    <label id="formLabel6" for="LastName">
+    <label id="formLabel6" for="LastName" style="width: 25%;" >
     Last Name*:</label>
     <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
     <br />
@@ -84,7 +82,7 @@ h1 {
     <br />
     <strong>TLC ENTRY ONLY</strong><br />
     <br />
-    Position:
+    <labeL id ="position">Position:</labeL>
     <asp:TextBox ID="txtPosition" runat="server"></asp:TextBox>
     <br />
     <br />

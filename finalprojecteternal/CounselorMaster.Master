@@ -8,6 +8,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Stylesheet.css">
 
 </head>
 
@@ -45,7 +46,7 @@
             </asp:ContentPlaceHolder>
         </div>
         <p>
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Log Out" />
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Log Out" PostBackUrl="~/CounselorLogOutConfirmation.aspx" />
         </p>
     </form>
 </body>

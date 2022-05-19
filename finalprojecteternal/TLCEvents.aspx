@@ -6,7 +6,7 @@
     <asp:datalist runat="server" DataKeyField="EventID" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="Unnamed1_SelectedIndexChanged">
         <ItemTemplate>
             <h3><asp:Label ID="EventNameLabel" runat="server" Text='<%# Eval("EventName") %>' /></h3>
-            <asp:Image runat="server" ID="EventImage" height="600px" width="600px" runat="server" src='<%# Eval("EventImage") %>'/>
+            <asp:Image runat="server" ID="EventImage" height="540px" width="540px" runat="server" src='<%# Eval("EventImage") %>'/>
             <br />
             Event Date and Time:
             <asp:Label ID="Label1" runat="server" Text='<%# Eval("EventDateTime") %>' />

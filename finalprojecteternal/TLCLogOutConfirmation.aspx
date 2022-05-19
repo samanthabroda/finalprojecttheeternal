@@ -10,6 +10,7 @@
     window.onunload=function(){null};
     </script>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Stylesheet.css">
     <title></title>
 </head>
 
@@ -23,16 +24,7 @@
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-      <div class="dropdown">
-    <button class="dropbtn">Manage Users
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-        <a href="ViewStudents.aspx">View All Students</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="UserEntry.aspx">Add Users</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <a href="DeleteUser.aspx">Delete Users</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </div>
-  </div>
+
 
 
   </nav>
@@ -43,8 +35,9 @@
         <br />
     </p>
     <p>
-        Are you sure you want to log out?</p>
+        
     <form id="form1" runat="server">
+        <p style="text-align: center">Are you sure you want to log out?</p></p>
         <p>
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Yes, log me out" />
         </p>

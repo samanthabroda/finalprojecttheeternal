@@ -115,6 +115,7 @@
     <Content Include="StudentMeetUs.aspx" />
     <Content Include="StudentProfile.aspx" />
     <Content Include="Style.css" />
+    <Content Include="Stylesheet.css" />
     <Content Include="TLCEditProfile.aspx" />
     <Content Include="TLCEvents.aspx" />
     <Content Include="TLCEventsEdit.aspx" />

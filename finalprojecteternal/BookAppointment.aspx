@@ -2,8 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>
-        Who would you like to book an appointment with?</p>
+    <p id="askappointment">Who would you like to book an appointment with?</p>
     <asp:DropDownList ID="lblWhichCounselor" runat="server" AutoPostBack="true" DataSourceID="SqlDataSource1" DataTextField="FirstName" DataValueField="FirstName" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" Width="236px">
         <asp:ListItem></asp:ListItem>
     </asp:DropDownList>
