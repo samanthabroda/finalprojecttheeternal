@@ -11,61 +11,70 @@ namespace finalprojecteternal
 {
 
 
-    public partial class StudentProfile
+    public partial class search
     {
 
         /// <summary>
-        /// lblFirstName control.
+        /// Head1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFirstName;
+        protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
 
         /// <summary>
-        /// lblLastName control.
+        /// formMain control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLastName;
+        protected global::System.Web.UI.HtmlControls.HtmlForm formMain;
 
         /// <summary>
-        /// lblPronouns control.
+        /// PanelSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPronouns;
+        protected global::System.Web.UI.WebControls.Panel PanelSearch;
 
         /// <summary>
-        /// lblAboutMe control.
+        /// TextBoxSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAboutMe;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxSearch;
 
         /// <summary>
-        /// lblGoals control.
+        /// ButtonSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblGoals;
+        protected global::System.Web.UI.WebControls.Button ButtonSearch;
 
         /// <summary>
-        /// HyperLink1 control.
+        /// GridViewEmployees control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        protected global::System.Web.UI.WebControls.GridView GridViewEmployees;
+
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }

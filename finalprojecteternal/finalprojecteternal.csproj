@@ -103,6 +103,8 @@
     <Content Include="FAQPage.aspx" />
     <Content Include="HomePage.aspx" />
     <Content Include="LogOutConfirmation.aspx" />
+    <Content Include="SamanthaBrodaAppointments.aspx" />
+    <Content Include="search.aspx" />
     <Content Include="StudentEditProfile.aspx" />
     <Content Include="StudentEvents.aspx" />
     <Content Include="StudentFAQPage.aspx" />
@@ -235,6 +237,7 @@
     <Compile Include="FAQPage.aspx.designer.cs">
       <DependentUpon>FAQPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GlobalVariables.cs" />
     <Compile Include="HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -257,6 +260,20 @@
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SamanthaBrodaAppointments.aspx.cs">
+      <DependentUpon>SamanthaBrodaAppointments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SamanthaBrodaAppointments.aspx.designer.cs">
+      <DependentUpon>SamanthaBrodaAppointments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
     <Compile Include="StudentEditProfile.aspx.cs">
       <DependentUpon>StudentEditProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

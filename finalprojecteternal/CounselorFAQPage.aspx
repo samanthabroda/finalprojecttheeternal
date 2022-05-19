@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>FAQ (<a class="adminOnly" href="FAQEdit.aspx">Edit</a>)</h1>
+    <h1>FAQ</h1>
     <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" RepeatLayout="Flow">
         <ItemTemplate>
             -

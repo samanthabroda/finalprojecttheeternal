@@ -21,7 +21,10 @@ namespace finalprojecteternal
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            using(c)
+            GlobalVariables.User = txtUser.Text;
+            GlobalVariables.Pass = txtPassword.Text;
+
+            using (c)
             {
                 c.Open();
                 if (txtUser.Text == "Student")
@@ -41,9 +44,8 @@ namespace finalprojecteternal
                         lblMessage.Visible = true;
                     }
 
-                    
 
-                    
+
                 }
                 
 

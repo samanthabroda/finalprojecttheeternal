@@ -11,14 +11,18 @@ namespace finalprojecteternal
     public partial class StudentEditProfile : System.Web.UI.Page
     {
         SqlConnection c = new SqlConnection(@"Data Source=DESKTOP-DOT3O9P,1434; Initial Catalog=master; User Id=maliksimrah; Password=@Farmingdale123");
+        int id;
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            
+
             c.Open();
 
-            SqlCommand pro = new SqlCommand("SELECT Pronouns FROM STUDENT WHERE StudentID=2", c);
-            SqlCommand abme = new SqlCommand("SELECT AboutMe FROM STUDENT WHERE StudentID=2", c);
-            SqlCommand goa = new SqlCommand("SELECT Goals FROM STUDENT WHERE StudentID=2", c);
+            SqlCommand pro = new SqlCommand("SELECT Pronouns FROM STUDENT WHERE StudentID=" + id, c);
+            SqlCommand abme = new SqlCommand("SELECT AboutMe FROM STUDENT WHERE StudentID=" + id, c);
+            SqlCommand goa = new SqlCommand("SELECT Goals FROM STUDENT WHERE StudentID=" + id, c);
 
             SqlDataReader abmereader = abme.ExecuteReader();
             if (abmereader.Read())
@@ -54,7 +58,7 @@ namespace finalprojecteternal
         {
             c.Open();
             SqlCommand cmd = new SqlCommand("exec spUpdateStudentProfile @StudentID=@id, @Pronouns=@pro , @Aboutme=@abme, @Goals=@goa;", c);
-            cmd.Parameters.AddWithValue("@id", 2);
+            cmd.Parameters.AddWithValue("@id", id);
             if (txtPronouns.Text.Length < 1)
             {
                 txtPronouns.Text = lblPronouns.Text;
