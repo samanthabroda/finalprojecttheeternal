@@ -21,8 +21,67 @@ namespace finalprojecteternal
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            GlobalVariables.User = txtUser.Text;
+            c.Open();
+            
+            GlobalVariables.User = txtEmail.Text;
             GlobalVariables.Pass = txtPassword.Text;
+
+            if (txtUser.Text == "Student")
+            {
+                SqlCommand goa = new SqlCommand("SELECT StudentID FROM STUDENTACCOUNTINFO WHERE Username='" + GlobalVariables.User + "' AND Password='" + GlobalVariables.Pass + "'", c);
+
+                SqlDataReader goareader = goa.ExecuteReader();
+                if (goareader.Read())
+                {
+                    GlobalVariables.i = goareader.GetInt32(0);
+                }
+
+                goareader.Close();
+            }
+
+
+            if (txtUser.Text == "Administrator")
+            {
+                SqlCommand goa = new SqlCommand("SELECT AdminID FROM ADMINACCOUNTINFO WHERE Username='" + GlobalVariables.User + "' AND Password='" + GlobalVariables.Pass + "'", c);
+
+                SqlDataReader goareader = goa.ExecuteReader();
+                if (goareader.Read())
+                {
+                    GlobalVariables.i = goareader.GetInt32(0);
+                }
+
+                goareader.Close();
+            }
+
+            if (txtUser.Text == "TLC Member")
+            {
+                SqlCommand goa = new SqlCommand("SELECT TLCID FROM TLCACCOUNTINFO WHERE Username='" + GlobalVariables.User + "' AND Password='" + GlobalVariables.Pass + "'", c);
+
+                SqlDataReader goareader = goa.ExecuteReader();
+                if (goareader.Read())
+                {
+                    GlobalVariables.i = goareader.GetInt32(0);
+                }
+
+                goareader.Close();
+            }
+
+            if (txtUser.Text == "Counselor")
+            {
+                SqlCommand goa = new SqlCommand("SELECT CounselorID FROM COUNSELORACCOUNTINFO WHERE Username='" + GlobalVariables.User + "' AND Password='" + GlobalVariables.Pass + "'", c);
+
+                SqlDataReader goareader = goa.ExecuteReader();
+                if (goareader.Read())
+                {
+                    GlobalVariables.i = goareader.GetInt32(0);
+                }
+
+                goareader.Close();
+            }
+
+            c.Close();
+
+            
 
             using (c)
             {

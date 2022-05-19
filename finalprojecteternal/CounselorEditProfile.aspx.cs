@@ -11,15 +11,15 @@ namespace finalprojecteternal
     public partial class CounselorEditProfile : System.Web.UI.Page
     {
         SqlConnection c = new SqlConnection(@"Data Source=DESKTOP-DOT3O9P,1434; Initial Catalog=master; User Id=maliksimrah; Password=@Farmingdale123");
-
+        int i = GlobalVariables.i;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             c.Open();
 
-            SqlCommand pro = new SqlCommand("SELECT Pronouns FROM COUNSELOR WHERE CounselorID=1", c);
-            SqlCommand abme = new SqlCommand("SELECT AboutMe FROM COUNSELOR WHERE CounselorID=1", c);
-            SqlCommand exp = new SqlCommand("SELECT Experience FROM COUNSELOR WHERE CounselorID=1", c);
+            SqlCommand pro = new SqlCommand("SELECT Pronouns FROM COUNSELOR WHERE CounselorID=" + i, c);
+            SqlCommand abme = new SqlCommand("SELECT AboutMe FROM COUNSELOR WHERE CounselorID=" + i, c);
+            SqlCommand exp = new SqlCommand("SELECT Experience FROM COUNSELOR WHERE CounselorID=" + i, c);
 
             SqlDataReader abmereader = abme.ExecuteReader();
             if (abmereader.Read())
@@ -56,7 +56,7 @@ namespace finalprojecteternal
         {
             c.Open();
             SqlCommand cmd = new SqlCommand("exec spUpdateCounselorProfile @CounselorID=@id, @Pronouns=@pro , @Aboutme=@abme, @Experience=@exp;", c);
-            cmd.Parameters.AddWithValue("@id", 1);
+            cmd.Parameters.AddWithValue("@id", i);
             if (txtPronouns.Text.Length < 1)
             {
                 txtPronouns.Text = lblPronouns.Text;

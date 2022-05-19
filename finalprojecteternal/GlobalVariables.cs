@@ -20,5 +20,11 @@ namespace finalprojecteternal
             get { return password; }
             set { password = value; }
         }
+        private static int id = 0;
+        public static int i
+        {
+            get { return id; }
+            set { id = value; }
+        }
     }
 }

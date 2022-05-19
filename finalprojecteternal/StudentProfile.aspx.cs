@@ -11,20 +11,11 @@ namespace finalprojecteternal
     public partial class StudentProfile : System.Web.UI.Page
     {
         SqlConnection c = new SqlConnection(@"Data Source=DESKTOP-DOT3O9P,1434; Initial Catalog=master; User Id=maliksimrah; Password=@Farmingdale123");
-        int i = 0;
+        int i = GlobalVariables.i;
         protected void Page_Load(object sender, EventArgs e)
         {
             c.Open();
-            SqlCommand goa = new SqlCommand("SELECT StudentID FROM STUDENTACCOUNTINFO WHERE UserName='" + GlobalVariables.User + "' AND Password='" + GlobalVariables.Pass +"'", c);
-            string id = "0";
-            int i = Int32.Parse(id);
-            SqlDataReader goareader = goa.ExecuteReader();
-            if (goareader.Read())
-            {
-                i = goareader.GetInt32(0);
-            }
-
-            goareader.Close();
+            
 
             SqlCommand fname = new SqlCommand("SELECT FirstName FROM STUDENT WHERE StudentID=" + i, c);
             SqlCommand lname = new SqlCommand("SELECT LastName FROM STUDENT WHERE StudentID=" + i, c);

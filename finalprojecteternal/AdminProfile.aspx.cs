@@ -11,16 +11,17 @@ namespace finalprojecteternal
     public partial class AdminProfile : System.Web.UI.Page
     {
         SqlConnection c = new SqlConnection(@"Data Source=DESKTOP-DOT3O9P,1434; Initial Catalog=master; User Id=maliksimrah; Password=@Farmingdale123");
+        int i = GlobalVariables.i;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             c.Open();
-            SqlCommand fname = new SqlCommand("SELECT FirstName FROM ADMINISTRATOR WHERE AdminID=1", c);
-            SqlCommand lname = new SqlCommand("SELECT LastName FROM ADMINISTRATOR WHERE AdminID=1", c);
-            SqlCommand pro = new SqlCommand("SELECT Pronouns FROM ADMINISTRATOR WHERE AdminID=1", c);
-            SqlCommand abme = new SqlCommand("SELECT AboutMe FROM ADMINISTRATOR WHERE AdminID=1", c);
-            SqlCommand exp = new SqlCommand("SELECT Experience FROM ADMINISTRATOR WHERE AdminID=1", c);
-            SqlCommand bra = new SqlCommand("SELECT Branch FROM ADMINISTRATOR WHERE AdminID=1", c);
+            SqlCommand fname = new SqlCommand("SELECT FirstName FROM ADMINISTRATOR WHERE AdminID=" + i, c);
+            SqlCommand lname = new SqlCommand("SELECT LastName FROM ADMINISTRATOR WHERE AdminID=" + i, c);
+            SqlCommand pro = new SqlCommand("SELECT Pronouns FROM ADMINISTRATOR WHERE AdminID=" + i, c);
+            SqlCommand abme = new SqlCommand("SELECT AboutMe FROM ADMINISTRATOR WHERE AdminID=" + i, c);
+            SqlCommand exp = new SqlCommand("SELECT Experience FROM ADMINISTRATOR WHERE AdminID=" + i, c);
+            SqlCommand bra = new SqlCommand("SELECT Branch FROM ADMINISTRATOR WHERE AdminID=" + i, c);
 
 
             SqlDataReader fnamereader = fname.ExecuteReader();

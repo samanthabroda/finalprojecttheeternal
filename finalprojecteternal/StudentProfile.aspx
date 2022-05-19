@@ -9,7 +9,7 @@
         &nbsp;<strong>Name:</strong>
     <asp:Label ID="lblFirstName" runat="server"></asp:Label>
     <asp:Label ID="lblLastName" runat="server"></asp:Label>
-    </p>
+</p>
 <p>
     &nbsp;</p>
 <p id="lblPro">
@@ -28,10 +28,10 @@
     <strong>Goals:</strong>
     <asp:Label ID="lblGoals" runat="server"></asp:Label>
 </p>
-    <p>
-        &nbsp;</p>
-    <p>
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/StudentEditProfile.aspx">Edit Profile</asp:HyperLink>
+<p>
+    &nbsp;</p>
+<p>
+    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/StudentEditProfile.aspx">Edit Profile</asp:HyperLink>
 </p>
 <p>
 </p>

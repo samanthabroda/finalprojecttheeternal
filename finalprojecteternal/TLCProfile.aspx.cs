@@ -11,16 +11,16 @@ namespace finalprojecteternal
     public partial class TLCProfile : System.Web.UI.Page
     {
         SqlConnection c = new SqlConnection(@"Data Source=DESKTOP-DOT3O9P,1434; Initial Catalog=master; User Id=maliksimrah; Password=@Farmingdale123");
-
+        int i = GlobalVariables.i;
         protected void Page_Load(object sender, EventArgs e)
         {
             c.Open();
-            SqlCommand fname = new SqlCommand("SELECT FirstName FROM TLC WHERE TLCID=1", c);
-            SqlCommand lname = new SqlCommand("SELECT LastName FROM TLC WHERE TLCID=1", c);
-            SqlCommand pos = new SqlCommand("SELECT Position FROM TLC WHERE TLCID=1", c);
-            SqlCommand pro = new SqlCommand("SELECT Pronouns FROM TLC WHERE TLCID=1", c);
-            SqlCommand abme = new SqlCommand("SELECT AboutMe FROM TLC WHERE TLCID=1", c);
-            SqlCommand goa = new SqlCommand("SELECT Goals FROM TLC WHERE TLCID=1", c);
+            SqlCommand fname = new SqlCommand("SELECT FirstName FROM TLC WHERE TLCID=" + i, c);
+            SqlCommand lname = new SqlCommand("SELECT LastName FROM TLC WHERE TLCID=" + i, c);
+            SqlCommand pos = new SqlCommand("SELECT Position FROM TLC WHERE TLCID=" + i, c);
+            SqlCommand pro = new SqlCommand("SELECT Pronouns FROM TLC WHERE TLCID=" + i, c);
+            SqlCommand abme = new SqlCommand("SELECT AboutMe FROM TLC WHERE TLCID=" + i, c);
+            SqlCommand goa = new SqlCommand("SELECT Goals FROM TLC WHERE TLCID=" + i, c);
 
 
             SqlDataReader fnamereader = fname.ExecuteReader();

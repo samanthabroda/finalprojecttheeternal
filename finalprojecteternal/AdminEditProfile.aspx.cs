@@ -12,15 +12,15 @@ namespace finalprojecteternal
     public partial class AdminEditProfile : System.Web.UI.Page
     {
         SqlConnection c = new SqlConnection(@"Data Source=DESKTOP-DOT3O9P,1434; Initial Catalog=master; User Id=maliksimrah; Password=@Farmingdale123");
-
+        int i = GlobalVariables.i;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             c.Open();
 
-            SqlCommand pro = new SqlCommand("SELECT Pronouns FROM ADMINISTRATOR WHERE AdminID=1", c);
-            SqlCommand abme = new SqlCommand("SELECT AboutMe FROM ADMINISTRATOR WHERE AdminID=1", c);
-            SqlCommand exp = new SqlCommand("SELECT Experience FROM ADMINISTRATOR WHERE AdminID=1", c);
+            SqlCommand pro = new SqlCommand("SELECT Pronouns FROM ADMINISTRATOR WHERE AdminID=" + i, c);
+            SqlCommand abme = new SqlCommand("SELECT AboutMe FROM ADMINISTRATOR WHERE AdminID=" + i, c);
+            SqlCommand exp = new SqlCommand("SELECT Experience FROM ADMINISTRATOR WHERE AdminID=" + i, c);
 
             SqlDataReader abmereader = abme.ExecuteReader();
             if (abmereader.Read())
@@ -56,7 +56,7 @@ namespace finalprojecteternal
         {
             c.Open();
             SqlCommand cmd = new SqlCommand("exec spUpdateAdminProfile @AdminID=@id, @Pronouns=@pro , @Aboutme=@abme, @Experience=@exp;", c);
-            cmd.Parameters.AddWithValue("@id", 1);
+            cmd.Parameters.AddWithValue("@id", i);
             if (txtPronouns.Text.Length < 1)
             {
                 txtPronouns.Text = lblPronouns.Text;

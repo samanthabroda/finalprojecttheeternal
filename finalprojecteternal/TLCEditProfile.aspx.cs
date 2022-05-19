@@ -11,14 +11,14 @@ namespace finalprojecteternal
     public partial class TLCEditForm : System.Web.UI.Page
     {
         SqlConnection c = new SqlConnection(@"Data Source=DESKTOP-DOT3O9P,1434; Initial Catalog=master; User Id=maliksimrah; Password=@Farmingdale123");
-
+        int i = GlobalVariables.i;
         protected void Page_Load(object sender, EventArgs e)
         {
             c.Open();
 
-            SqlCommand pro = new SqlCommand("SELECT Pronouns FROM TLC WHERE TLCID=1", c);
-            SqlCommand abme = new SqlCommand("SELECT AboutMe FROM TLC WHERE TLCID=1", c);
-            SqlCommand goa = new SqlCommand("SELECT Goals FROM TLC WHERE TLCID=1", c);
+            SqlCommand pro = new SqlCommand("SELECT Pronouns FROM TLC WHERE TLCID=" + i, c);
+            SqlCommand abme = new SqlCommand("SELECT AboutMe FROM TLC WHERE TLCID=" + i, c);
+            SqlCommand goa = new SqlCommand("SELECT Goals FROM TLC WHERE TLCID=" + i, c);
 
             SqlDataReader abmereader = abme.ExecuteReader();
             if (abmereader.Read())
@@ -54,7 +54,7 @@ namespace finalprojecteternal
         {
             c.Open();
             SqlCommand cmd = new SqlCommand("exec spUpdateTLCProfile @TLCID=@id, @Pronouns=@pro , @Aboutme=@abme, @Goals=@goa;", c);
-            cmd.Parameters.AddWithValue("@id", 1);
+            cmd.Parameters.AddWithValue("@id", i);
             if (txtPronouns.Text.Length < 1)
             {
                 txtPronouns.Text = lblPronouns.Text;

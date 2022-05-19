@@ -11,16 +11,16 @@ namespace finalprojecteternal
     public partial class CounselorProfile : System.Web.UI.Page
     {
         SqlConnection c = new SqlConnection(@"Data Source=DESKTOP-DOT3O9P,1434; Initial Catalog=master; User Id=maliksimrah; Password=@Farmingdale123");
-
+        int i = GlobalVariables.i;
         protected void Page_Load(object sender, EventArgs e)
         {
             c.Open();
-            SqlCommand fname = new SqlCommand("SELECT FirstName FROM COUNSELOR WHERE CounselorID=1", c);
-            SqlCommand lname = new SqlCommand("SELECT LastName FROM COUNSELOR WHERE CounselorID=1", c);
-            SqlCommand pro = new SqlCommand("SELECT Pronouns FROM COUNSELOR WHERE CounselorID=1", c);
-            SqlCommand abme = new SqlCommand("SELECT AboutMe FROM COUNSELOR WHERE CounselorID=1", c);
-            SqlCommand exp = new SqlCommand("SELECT Experience FROM COUNSELOR WHERE CounselorID=1", c);
-            SqlCommand ava = new SqlCommand("SELECT Availability FROM COUNSELOR WHERE CounselorID=1", c);
+            SqlCommand fname = new SqlCommand("SELECT FirstName FROM COUNSELOR WHERE CounselorID=" + i, c);
+            SqlCommand lname = new SqlCommand("SELECT LastName FROM COUNSELOR WHERE CounselorID=" + i, c);
+            SqlCommand pro = new SqlCommand("SELECT Pronouns FROM COUNSELOR WHERE CounselorID=" + i, c);
+            SqlCommand abme = new SqlCommand("SELECT AboutMe FROM COUNSELOR WHERE CounselorID=" + i, c);
+            SqlCommand exp = new SqlCommand("SELECT Experience FROM COUNSELOR WHERE CounselorID=" + i, c);
+            SqlCommand ava = new SqlCommand("SELECT Availability FROM COUNSELOR WHERE CounselorID=" + i, c);
 
 
             SqlDataReader fnamereader = fname.ExecuteReader();
