@@ -35,13 +35,13 @@ namespace finalprojecteternal
                 SqlCommand cmd4 = new SqlCommand("SELECT RSVP_count FROM EVENTS1 WHERE EventID=" + newID + "", c);
                 int exist = Int32.Parse("0");
                 int totalamount = Int32.Parse("0");
-                SqlDataReader cmdreader = cmd2.ExecuteReader();
-                if (cmdreader.Read())
+                SqlDataReader cmd2reader = cmd2.ExecuteReader();
+                if (cmd2reader.Read())
                 {
-                    exist = cmdreader.GetInt32(0);
+                    exist = cmd2reader.GetInt32(0);
                 }
 
-                cmdreader.Close();
+                cmd2reader.Close();
 
                 SqlDataReader cmd4reader = cmd4.ExecuteReader();
                 if (cmd4reader.Read())
@@ -49,8 +49,7 @@ namespace finalprojecteternal
                     totalamount = cmd4reader.GetInt32(0);
                 }
 
-
-                cmdreader.Close();
+                cmd4reader.Close();
                 //var exist = (int)cmd2.ExecuteScalar();
                 if (exist == 0 && exist < totalamount)
                 {

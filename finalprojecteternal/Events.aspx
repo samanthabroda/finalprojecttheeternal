@@ -5,7 +5,7 @@
     <h1>Events (<a class="aandcOnly" href="EventsEdit.aspx">Edit</a>)</h1><asp:Label ID="warnMe" runat="server" Visible="false" Text="You are already RSVP'd!"></asp:Label>
     <asp:datalist ID="DataList1" runat="server" DataSourceID="SqlDataSource1" OnItemCommand="Unnamed1_ItemCommand">
         <ItemTemplate>
-            Event Name: <asp:Label ID="EventNameLabel" runat="server" Text='<%# Eval("EventName") %>'></asp:Label> 
+            Event Name: <asp:Label ID="EventNameLabel" runat="server" Text='<%# Eval("EventName") %>'></asp:Label> <asp:Label ID="IDNum" runat="server" Visible="false" Text='<%# Eval("EventID") %>'></asp:Label> <asp:Label ID="Label3" runat="server" Visible="false" Text='<%# Eval("RSVPCount") %>'></asp:Label>
             <br />
             Event Location: <asp:Label ID="EventLocationLabel" runat="server" Text='<%# Eval("EventLocation") %>'></asp:Label>
             <br />

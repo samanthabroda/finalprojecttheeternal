@@ -32,7 +32,7 @@ namespace finalprojecteternal
                 c.Open();
                 if (TextBox6.Text == "")
                 {
-                    SqlCommand cmde = new SqlCommand("INSERT INTO EVENTS1 (EventName, EventImage, EventLocation, EventDescription, EventLink, EventDateTime, RSVPCount, EventApproval) VALUES ('" + TextBox1.Text + "', '" + bytes + "', '" + TextBox2.Text + "', '" + TextBox5.Text + "', '" + TextBox4.Text + "', '" + TextBox3.Text + "', 0, 'not approved')", c);
+                    SqlCommand cmde = new SqlCommand("INSERT INTO EVENTS1 (EventName, EventImage, EventLocation, EventDescription, EventLink, EventDateTime, RSVPCount, EventApproval, RSVP_count) VALUES ('" + TextBox1.Text + "', '" + bytes + "', '" + TextBox2.Text + "', '" + TextBox5.Text + "', '" + TextBox4.Text + "', '" + TextBox3.Text + "', 0, 'not approved', 1000)", c);
                     cmde.ExecuteNonQuery();
                 }
 
