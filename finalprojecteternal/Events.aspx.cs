@@ -27,9 +27,9 @@ namespace finalprojecteternal
                 int newID = int.Parse(rs);
                 int newR = int.Parse(ra) + 1;
                 c.Open();
-                SqlCommand cmd2 = new SqlCommand("SELECT COUNT(*) FROM RSVP WHERE EMAIL="+ GlobalVariables.User, c);
+                SqlCommand cmd2 = new SqlCommand("SELECT COUNT(*) FROM RSVP WHERE Email="+ GlobalVariables.User, c);
                 var exist = (int)cmd2.ExecuteScalar();
-                if(exist > 0)
+                if(exist == 0)
                 {
                     SqlCommand cmd = new SqlCommand("UPDATE EVENTS1 SET RSVPCount = " + newR + "WHERE EventID = " + newID, c);
                     cmd.ExecuteNonQuery();
