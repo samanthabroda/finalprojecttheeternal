@@ -32,7 +32,9 @@ namespace finalprojecteternal
                 int newR = int.Parse(ra) + 1;
                 c.Open();
                 SqlCommand cmd2 = new SqlCommand("SELECT COUNT(*) FROM RSVP WHERE Email='" + GlobalVariables.User + "'", c);
+                SqlCommand cmd4 = new SqlCommand("SELECT RSVP_count FROM EVENTS1 WHERE EventID=" + newID + "", c);
                 int exist = Int32.Parse("0");
+                int totalamount = Int32.Parse("0");
                 SqlDataReader cmdreader = cmd2.ExecuteReader();
                 if (cmdreader.Read())
                 {
@@ -40,14 +42,31 @@ namespace finalprojecteternal
                 }
 
                 cmdreader.Close();
+
+                SqlDataReader cmd4reader = cmd4.ExecuteReader();
+                if (cmd4reader.Read())
+                {
+                    totalamount = cmd4reader.GetInt32(0);
+                }
+
+
+                cmdreader.Close();
                 //var exist = (int)cmd2.ExecuteScalar();
-                if (exist == 0)
+                if (exist == 0 && exist < totalamount)
                 {
                     SqlCommand cmd = new SqlCommand("UPDATE EVENTS1 SET RSVPCount = " + newR + "WHERE EventID = " + newID, c);
                     cmd.ExecuteNonQuery();
                     SqlCommand cmd3 = new SqlCommand("INSERT INTO RSVP VALUES (" + newID + ", '" + GlobalVariables.User + "')", c);
                     cmd3.ExecuteNonQuery();
                 }
+
+                else if (exist > totalamount)
+                {
+                    warnMe.Text = "The RSVP limit has been reached.";
+                    warnMe.Visible = true;
+                }
+
+
 
                 
                 else

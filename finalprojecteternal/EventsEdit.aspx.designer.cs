@@ -87,15 +87,6 @@ namespace finalprojecteternal
         protected global::System.Web.UI.WebControls.TextBox TextBox5;
 
         /// <summary>
-        /// hideMe control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hideMe;
-
-        /// <summary>
         /// TextBox6 control.
         /// </summary>
         /// <remarks>

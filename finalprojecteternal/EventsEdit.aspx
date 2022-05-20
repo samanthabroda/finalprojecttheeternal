@@ -12,8 +12,9 @@
             <asp:BoundField DataField="EventLink" HeaderText="EventLink" SortExpression="EventLink" />
             <asp:BoundField DataField="EventDateTime" HeaderText="EventDateTime" SortExpression="EventDateTime" />
             <asp:BoundField DataField="RSVPCount" HeaderText="RSVPCount" SortExpression="RSVPCount" />
+            <asp:BoundField DataField="RSVP_count" HeaderText="Limit" ReadOnly="True" SortExpression="RSVP_count" />
             <asp:BoundField DataField="EventApproval" HeaderText="EventApproval" SortExpression="EventApproval" />
-            <asp:ButtonField CommandName="Delete" HeaderText="Delete Event" ShowHeader="True" Text="Delete Entry" />
+            <asp:ButtonField CommandName="Delete1" HeaderText="Delete Event" ShowHeader="True" Text="Delete Entry" />
             <asp:ButtonField CommandName="Approve" HeaderText="Approve Event" ShowHeader="True" Text="Approve" />
         </Columns>
     </asp:GridView>
@@ -47,11 +48,11 @@
     <asp:TextBox ID="TextBox5" runat="server" Width="571px" Height="21px"></asp:TextBox>
     <br/>
     <br />
-    <asp:Label runat="server" id="hideMe">How many attendees are allowed? <asp:TextBox ID="TextBox6" runat="server" Width="106px"></asp:TextBox></asp:Label>
+    How many attendees are allowed? <asp:TextBox ID="TextBox6" runat="server" Width="106px"></asp:TextBox>
     <br />
     <asp:Button ID="Button1" runat="server" Text="Submit" Height="46px" OnClick="Button1_Click" Width="177px" />
     <br />
     <br />
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:masterConnectionString %>" SelectCommand="SELECT [EventID], [EventName], [EventImage], [EventLocation], [EventDescription], [EventLink], [EventDateTime], [RSVPCount], [EventApproval] FROM [EVENTS1] ORDER BY [EventDateTime]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:masterConnectionString %>" SelectCommand="SELECT [EventID], [EventName], [EventImage], [EventLocation], [EventDescription], [EventLink], [EventDateTime], [RSVPCount], [RSVP_count], [EventApproval] FROM [EVENTS1] ORDER BY [EventDateTime]"></asp:SqlDataSource>
 </asp:Content>
