@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="EventsEdit.aspx.cs" Inherits="finalprojecteternal.EventsEdit" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="EventsEditAdmin.aspx.cs" Inherits="finalprojecteternal.EventsEditAdmin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Events Manager (<a href="Events.aspx">Done</a>)</h1>
-    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="EventID" DataSourceID="SqlDataSource1" Width="1286px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="EventID" DataSourceID="SqlDataSource1" Width="1344px" OnRowCommand="GridView1_RowCommand" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
         <Columns>
             <asp:BoundField DataField="EventID" HeaderText="EventID" InsertVisible="False" ReadOnly="True" SortExpression="EventID" />
             <asp:BoundField DataField="EventName" HeaderText="EventName" SortExpression="EventName" />
@@ -13,6 +13,8 @@
             <asp:BoundField DataField="EventDateTime" HeaderText="EventDateTime" SortExpression="EventDateTime" />
             <asp:BoundField DataField="RSVPCount" HeaderText="RSVPCount" SortExpression="RSVPCount" />
             <asp:BoundField DataField="EventApproval" HeaderText="EventApproval" SortExpression="EventApproval" />
+            <asp:ButtonField CommandName="Delete" HeaderText="Delete Event" ShowHeader="True" Text="Delete Entry" />
+            <asp:ButtonField CommandName="Approve" HeaderText="Approve Event" ShowHeader="True" Text="Approve" />
         </Columns>
     </asp:GridView>
     <br />

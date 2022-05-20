@@ -11,7 +11,7 @@ namespace finalprojecteternal
         public static string User
         {
             get { return username; }
-            set {username = value;}
+            set { username = value; }
         }
 
         private static string password = "";
@@ -22,12 +22,6 @@ namespace finalprojecteternal
         }
         private static int id = 0;
         public static int i
-        {
-            get { return id; }
-            set { id = value; }
-        }
-
-        public static int EventI
         {
             get { return id; }
             set { id = value; }

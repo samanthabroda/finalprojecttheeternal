@@ -86,6 +86,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Events.aspx" />
+    <Content Include="EventsEditAdmin.aspx" />
     <Content Include="EventsEdit.aspx" />
     <Content Include="FAQ.aspx" />
     <Content Include="FAQEdit.aspx" />
@@ -100,6 +101,13 @@
     </Compile>
     <Compile Include="Events.aspx.designer.cs">
       <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventsEditAdmin.aspx.cs">
+      <DependentUpon>EventsEditAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventsEditAdmin.aspx.designer.cs">
+      <DependentUpon>EventsEditAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="EventsEdit.aspx.cs">
       <DependentUpon>EventsEdit.aspx</DependentUpon>
@@ -122,6 +130,7 @@
     <Compile Include="FAQEdit.aspx.designer.cs">
       <DependentUpon>FAQEdit.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GlobalVariables.cs" />
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
