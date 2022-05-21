@@ -51,7 +51,7 @@ namespace finalprojecteternal
                         goareader.Close();
                         SqlCommand cmde = new SqlCommand("INSERT INTO ADMINACCOUNTINFO VALUES (" + i + ", '" + txtEmail.Text + "', 'abc123')", c);
                         cmde.ExecuteNonQuery();
-
+                        lblFill.Visible = false;
                         lblMessage.Text = "Record submitted successfully!";
                         c.Close();
                     }
@@ -83,6 +83,7 @@ namespace finalprojecteternal
                         goareader.Close();
                         SqlCommand cmde = new SqlCommand("INSERT INTO STUDENTACCOUNTINFO VALUES (" + i + ", '" + txtEmail.Text + "', 'abc123')", c);
                         cmde.ExecuteNonQuery();
+                        lblFill.Visible = false;
                         lblMessage.Text = "Record submitted successfully!";
                         c.Close();
                     }
@@ -115,7 +116,7 @@ namespace finalprojecteternal
                         goareader.Close();
                         SqlCommand cmde = new SqlCommand("INSERT INTO COUNSELORACCOUNTINFO VALUES (" + i + ", '" + txtEmail.Text + "', 'abc123')", c);
                         cmde.ExecuteNonQuery();
-
+                        lblFill.Visible = false;
                         lblMessage.Text = "Record submitted successfully!";
                         c.Close();
                     }
@@ -147,7 +148,7 @@ namespace finalprojecteternal
                         goareader.Close();
                         SqlCommand cmde = new SqlCommand("INSERT INTO TLCACCOUNTINFO VALUES (" + i + ", '" + txtEmail.Text + "', 'abc123')", c);
                         cmde.ExecuteNonQuery();
-
+                        lblFill.Visible = false;
                         lblMessage.Text = "Record submitted successfully!";
                         c.Close();
                     }

@@ -11,17 +11,8 @@ namespace finalprojecteternal
 {
 
 
-    public partial class CounselorEvents
+    public partial class TLCMeetUs
     {
-
-        /// <summary>
-        /// warnMe control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label warnMe;
 
         /// <summary>
         /// DataList1 control.
@@ -40,5 +31,14 @@ namespace finalprojecteternal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+
+        /// <summary>
+        /// HyperLink1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
     }
 }

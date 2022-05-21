@@ -16,6 +16,7 @@
   <nav am-layout="horizontal">
   <a href="TLCHomePage.aspx">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="TLCFAQPage.aspx">FAQ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="StudentMeetUs.aspx">Meet The Team</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <a href="TLCEvents.aspx">Events</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
      <a href="TLCProfile.aspx">My Profile</a>&nbsp;&nbsp;
       

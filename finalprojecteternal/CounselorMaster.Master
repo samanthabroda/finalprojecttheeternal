@@ -28,7 +28,7 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-        <a href="CounselorViewStudents.aspx">View All Students</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="CounselorViewStudents.aspx">View Students</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </div>
   </div>
 

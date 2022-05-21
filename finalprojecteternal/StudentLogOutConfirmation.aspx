@@ -9,7 +9,7 @@
     setTimeout("preventBack()", 0);
     window.onunload=function(){null};
     </script>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Stylesheet.css">
     <title></title>
 </head>
 
@@ -17,7 +17,8 @@
   <nav am-layout="horizontal">
   <a href="HomePage.aspx">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="FAQPage.aspx">FAQ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="StudentMeetUs.aspx">Meet Us</a>&nbsp;&nbsp;
+      <a href="StudentMeetUs.aspx">Meet The Team</a>&nbsp;&nbsp;
+      <a href="StudentEvents.aspx">Events</a>&nbsp;&nbsp;
      <a href="StudentProfile.aspx">My Profile</a>&nbsp;&nbsp;
       
 

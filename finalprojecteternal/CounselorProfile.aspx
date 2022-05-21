@@ -17,9 +17,6 @@
     <asp:Label ID="lblAvailability" runat="server"></asp:Label>
     &nbsp;</p>
 <p>
-    <asp:HyperLink ID="HyperLink1" runat="server" style="text-decoration: underline">Book Appointment</asp:HyperLink>
-</p>
-<p>
     &nbsp;</p>
 <p>
     <strong>Pronouns:</strong>

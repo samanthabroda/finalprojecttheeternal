@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
+using System.Net.Mail;
 
 namespace finalprojecteternal
 {
@@ -72,9 +73,13 @@ namespace finalprojecteternal
 
             goareader.Close();
 
+            
+
             SqlCommand cmd = new SqlCommand("INSERT INTO APPOINTMENT VALUES (" + GlobalVariables.i + ", " + i + ", '" + txtDay.Text + "', '" + txtTime.Text + "', 'Sinclair 109', '" + txtDescription.Text + "')", c);
             cmd.ExecuteNonQuery();
             c.Close();
+
+
         }
     }
 }
